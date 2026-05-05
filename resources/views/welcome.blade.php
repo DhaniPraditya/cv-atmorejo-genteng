@@ -1,240 +1,206 @@
 <x-layout>
-    <!-- Shopify-style Hero Section -->
-    <section class="pt-32 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col items-center text-center" id="beranda">
-        
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-800 text-sm font-semibold mb-8">
-            <span class="relative flex h-2 w-2">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-2 w-2 bg-primary-500"></span>
-            </span>
-            Tersedia pengiriman ke seluruh Jawa
-        </div>
-
-        <h1 class="text-5xl sm:text-6xl md:text-8xl font-heading font-extrabold text-slate-950 tracking-tight leading-[1.1] mb-8 max-w-5xl mx-auto">
-            Atap Kuat untuk <br class="hidden sm:block"> Generasi Masa Depan.
-        </h1>
-        
-        <p class="text-lg sm:text-xl md:text-2xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Platform belanja genteng langsung dari pabrik. Kualitas teruji, harga transparan, dan pengiriman aman sampai di proyek Anda.
-        </p>
-        
-        <div class="flex flex-col sm:flex-row gap-4 mb-20 w-full sm:w-auto">
-            <a href="#katalog" class="btn-primary w-full sm:w-auto">
-                Lihat Katalog Produk
-            </a>
-            <a href="https://wa.me/6281234567890" target="_blank" class="btn-outline w-full sm:w-auto">
-                Konsultasi Gratis
-            </a>
-        </div>
-
-        <!-- Massive Hero Image -->
-        <div class="w-full relative rounded-[2rem] overflow-hidden bg-slate-100 border border-slate-200 aspect-video md:aspect-[21/9]">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop" alt="Pabrik Genteng" class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-slate-900/10 mix-blend-multiply"></div>
+    <!-- Shopify V2 Hero Section (Full Width Image with Overlay) -->
+    <section class="relative min-h-[95vh] flex items-center justify-center w-full overflow-hidden" id="beranda">
+        <!-- Background Image & Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop" alt="Pabrik Genteng Premium" class="w-full h-full object-cover">
+            <!-- Gradient Overlay to ensure text contrast -->
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 from-10% via-slate-950/70 to-slate-900/40"></div>
         </div>
         
-    </section>
-
-    <!-- Keunggulan (Bento Grid Style) -->
-    <section class="py-24 sm:py-32 bg-slate-50 border-t border-slate-200" id="keunggulan">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
-            <div class="mb-16 md:mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8">
-                <div class="max-w-3xl">
-                    <h2 class="text-4xl md:text-6xl font-heading font-bold text-slate-950 tracking-tight mb-6">Dibangun untuk bertahan.</h2>
-                    <p class="text-xl text-slate-600">Material premium yang dirancang khusus untuk menghadapi iklim tropis ekstrem.</p>
-                </div>
+        <!-- Hero Content -->
+        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto mt-20">
+            <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-bold uppercase tracking-widest mb-8">
+                <span class="relative flex h-2 w-2">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-primary-500"></span>
+                </span>
+                Ekselensi Atap Sejak 1990
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <h1 class="text-6xl sm:text-7xl md:text-8xl lg:text-[6.5rem] font-heading font-bold text-white tracking-tighter leading-[1.05] mb-8">
+                Kualitas Premium.<br>Ketahanan Abadi.
+            </h1>
+            
+            <p class="text-lg md:text-2xl text-slate-200 mb-12 max-w-3xl mx-auto leading-relaxed">
+                Menciptakan mahakarya arsitektur melalui kualitas genteng premium. Perlindungan elegan untuk hunian Anda, diwariskan dari generasi ke generasi.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center w-full sm:w-auto">
+                <a href="#katalog" class="btn-primary w-full sm:w-auto">
+                    Koleksi Kami
+                </a>
+                <a href="https://wa.me/6281234567890" target="_blank" class="btn-outline w-full sm:w-auto">
+                    Konsultasi Ahli
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keunggulan (Rounded Overlap Style) -->
+    <section class="relative z-20 bg-white -mt-16 rounded-t-[3rem] py-24 sm:py-32" id="keunggulan">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="mb-16 md:mb-24 text-center max-w-3xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-heading font-bold text-slate-900 mb-6 tracking-tight">Filosofi Kualitas Kami.</h2>
+                <p class="text-lg text-slate-500 leading-relaxed">Lebih dari sekadar pelindung, setiap keping genteng kami adalah dedikasi terhadap seni konstruksi dan keamanan keluarga Anda.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Card 1 -->
-                <div class="bg-white p-10 rounded-3xl border border-slate-200 flex flex-col h-full hover:border-slate-300 transition-colors">
-                    <div class="mb-auto">
-                        <div class="w-12 h-12 bg-slate-950 text-white rounded-full flex items-center justify-center mb-8">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                        </div>
-                        <h3 class="text-2xl font-bold text-slate-950 mb-4">Ketahanan Maksimal</h3>
-                        <p class="text-slate-600 text-lg leading-relaxed">Campuran material beton dan tanah liat khusus yang di-press dengan tekanan tinggi.</p>
+                <div class="bg-slate-50 p-10 rounded-[2rem] border border-slate-100 hover:bg-white hover:shadow-lg transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-slate-900 text-white rounded-full flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                     </div>
+                    <h3 class="text-2xl font-heading font-bold text-slate-900 mb-4 tracking-tight">Ketahanan Abadi</h3>
+                    <p class="text-slate-500 text-base leading-relaxed">Diproses dengan pemanasan tingkat tinggi menghasilkan kepadatan material yang tahan terhadap lumut dan cuaca ekstrem.</p>
                 </div>
                 
                 <!-- Card 2 -->
-                <div class="bg-slate-950 text-white p-10 rounded-3xl border border-slate-800 flex flex-col h-full relative overflow-hidden md:col-span-2">
-                    <!-- Accent background -->
-                    <div class="absolute -right-20 -top-20 w-64 h-64 bg-primary-500 rounded-full mix-blend-multiply filter blur-3xl opacity-50"></div>
-                    <div class="relative z-10 mb-auto max-w-xl">
-                        <div class="w-12 h-12 bg-white text-slate-950 rounded-full flex items-center justify-center mb-8">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-                        </div>
-                        <h3 class="text-3xl font-bold mb-4">Harga Pabrik Langsung</h3>
-                        <p class="text-slate-300 text-xl leading-relaxed">Tanpa perantara distributor. Kami memotong jalur distribusi agar Anda mendapatkan harga paling jujur dan transparan untuk proyek Anda.</p>
+                <div class="bg-slate-50 p-10 rounded-[2rem] border border-slate-100 hover:bg-white hover:shadow-lg transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-primary-600 text-white rounded-full flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18"/><path d="M15 3v18"/></svg>
                     </div>
+                    <h3 class="text-2xl font-heading font-bold text-slate-900 mb-4 tracking-tight">Estetika Arsitektural</h3>
+                    <p class="text-slate-500 text-base leading-relaxed">Desain geometris presisi yang menyempurnakan garis atap, cocok untuk gaya hunian dari klasik hingga ultra-modern.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-50 p-10 rounded-[2rem] border border-slate-100 hover:bg-white hover:shadow-lg transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-primary-600 text-white rounded-full flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 18V6"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-heading font-bold text-slate-900 mb-4 tracking-tight">Harga Pabrik</h3>
+                    <p class="text-slate-500 text-base leading-relaxed">Investasi cerdas untuk hunian Anda. Dapatkan kualitas setara standar internasional langsung dari fasilitas produksi kami.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Katalog Produk -->
-    <section class="py-24 sm:py-32 bg-white" id="katalog" x-data="{ selectedCategory: 'all' }">
+    <!-- Katalog Produk (Clean Shopify Style) -->
+    <section class="py-24 sm:py-32 bg-slate-50" id="katalog" x-data="{ selectedCategory: 'all' }">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
                 <div>
-                    <h2 class="text-4xl md:text-6xl font-heading font-bold text-slate-950 tracking-tight mb-6">Pilih Genteng Anda.</h2>
-                    <p class="text-xl text-slate-600 max-w-2xl">Ragam pilihan model dan warna yang disesuaikan dengan arsitektur rumah modern hingga klasik.</p>
+                    <h2 class="text-4xl md:text-5xl font-heading font-bold text-slate-900 mb-4 tracking-tight">Koleksi Eksklusif.</h2>
+                    <p class="text-lg text-slate-500 max-w-2xl">Pilih material yang mendefinisikan karakter bangunan Anda.</p>
                 </div>
                 
                 <!-- Filter Tabs -->
-                <div class="flex space-x-3 overflow-x-auto pb-2 w-full md:w-auto shrink-0 no-scrollbar">
-                    <button @click="selectedCategory = 'all'" :class="selectedCategory === 'all' ? 'bg-slate-950 text-white' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'" class="px-6 py-3 rounded-full text-base font-bold transition-colors whitespace-nowrap">Semua Tipe</button>
-                    <button @click="selectedCategory = 'beton'" :class="selectedCategory === 'beton' ? 'bg-slate-950 text-white' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'" class="px-6 py-3 rounded-full text-base font-bold transition-colors whitespace-nowrap">Genteng Beton</button>
-                    <button @click="selectedCategory = 'tanah_liat'" :class="selectedCategory === 'tanah_liat' ? 'bg-slate-950 text-white' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'" class="px-6 py-3 rounded-full text-base font-bold transition-colors whitespace-nowrap">Tanah Liat</button>
+                <div class="flex space-x-2 overflow-x-auto pb-2 w-full md:w-auto shrink-0 no-scrollbar">
+                    <button @click="selectedCategory = 'all'" :class="selectedCategory === 'all' ? 'bg-primary-600 text-white' : 'bg-white text-slate-600 hover:bg-slate-100 border border-slate-200'" class="px-6 py-2.5 rounded-full text-sm font-bold transition-colors whitespace-nowrap">Semua</button>
+                    <button @click="selectedCategory = 'beton'" :class="selectedCategory === 'beton' ? 'bg-primary-600 text-white' : 'bg-white text-slate-600 hover:bg-slate-100 border border-slate-200'" class="px-6 py-2.5 rounded-full text-sm font-bold transition-colors whitespace-nowrap">Beton</button>
+                    <button @click="selectedCategory = 'tanah_liat'" :class="selectedCategory === 'tanah_liat' ? 'bg-primary-600 text-white' : 'bg-white text-slate-600 hover:bg-slate-100 border border-slate-200'" class="px-6 py-2.5 rounded-full text-sm font-bold transition-colors whitespace-nowrap">Tanah Liat</button>
                 </div>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 <!-- Produk 1 -->
                 <div x-show="selectedCategory === 'all' || selectedCategory === 'beton'" class="group">
-                    <div class="bg-slate-100 rounded-3xl aspect-[4/3] mb-6 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1616422285623-14ff4e2a14ae?q=80&w=2000&auto=format&fit=crop" alt="Genteng Beton Flat" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 ease-in-out">
-                        <div class="absolute top-4 left-4 bg-white px-4 py-2 text-xs font-bold tracking-wider uppercase text-slate-950 rounded-full">Beton Flat</div>
+                    <div class="bg-white rounded-3xl aspect-[4/3] mb-6 overflow-hidden relative border border-slate-100">
+                        <img src="https://images.unsplash.com/photo-1616422285623-14ff4e2a14ae?q=80&w=2000&auto=format&fit=crop" alt="Genteng Beton Flat" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 ease-out">
                     </div>
-                    <h3 class="text-2xl font-bold text-slate-950 mb-2">Flat Minimalis</h3>
-                    <p class="text-slate-600 mb-6">Desain modern kontemporer.</p>
-                    <ul class="text-base text-slate-600 space-y-3 mb-8 border-t border-slate-200 pt-6">
-                        <li class="flex justify-between"><span>Ukuran</span> <span class="font-bold text-slate-950">33 x 42 cm</span></li>
-                        <li class="flex justify-between"><span>Berat</span> <span class="font-bold text-slate-950">4.5 Kg</span></li>
-                        <li class="flex justify-between"><span>Isi / m²</span> <span class="font-bold text-slate-950">10 pcs</span></li>
-                    </ul>
-                    <a href="https://wa.me/6281234567890" target="_blank" class="w-full btn-outline text-center block">Tanya Harga</a>
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-2xl font-heading font-bold text-slate-900 tracking-tight">Flat Minimalis</h3>
+                            <span class="text-xs font-bold tracking-widest uppercase text-slate-400 bg-slate-100 px-3 py-1 rounded-full">Beton</span>
+                        </div>
+                        <p class="text-slate-500 mb-6 text-base">Garis tegas untuk arsitektur kontemporer.</p>
+                        <a href="https://wa.me/6281234567890" target="_blank" class="w-full btn-outline border-slate-200 text-slate-900 py-3 text-sm">Lihat Spesifikasi</a>
+                    </div>
                 </div>
 
                 <!-- Produk 2 -->
                 <div x-show="selectedCategory === 'all' || selectedCategory === 'beton'" class="group">
-                    <div class="bg-slate-100 rounded-3xl aspect-[4/3] mb-6 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1594910086208-d2e46cecf475?q=80&w=2000&auto=format&fit=crop" alt="Genteng Beton Garuda" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 ease-in-out">
-                        <div class="absolute top-4 left-4 bg-white px-4 py-2 text-xs font-bold tracking-wider uppercase text-slate-950 rounded-full">Beton Gelombang</div>
+                    <div class="bg-white rounded-3xl aspect-[4/3] mb-6 overflow-hidden relative border border-slate-100">
+                        <img src="https://images.unsplash.com/photo-1594910086208-d2e46cecf475?q=80&w=2000&auto=format&fit=crop" alt="Genteng Beton Garuda" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 ease-out">
                     </div>
-                    <h3 class="text-2xl font-bold text-slate-950 mb-2">Garuda / Gelombang</h3>
-                    <p class="text-slate-600 mb-6">Sistem interlocking anti bocor.</p>
-                    <ul class="text-base text-slate-600 space-y-3 mb-8 border-t border-slate-200 pt-6">
-                        <li class="flex justify-between"><span>Ukuran</span> <span class="font-bold text-slate-950">33 x 42 cm</span></li>
-                        <li class="flex justify-between"><span>Berat</span> <span class="font-bold text-slate-950">4.2 Kg</span></li>
-                        <li class="flex justify-between"><span>Isi / m²</span> <span class="font-bold text-slate-950">9 pcs</span></li>
-                    </ul>
-                    <a href="https://wa.me/6281234567890" target="_blank" class="w-full btn-outline text-center block">Tanya Harga</a>
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-2xl font-heading font-bold text-slate-900 tracking-tight">Gelombang Klasik</h3>
+                            <span class="text-xs font-bold tracking-widest uppercase text-primary-600 bg-primary-50 px-3 py-1 rounded-full">Beton</span>
+                        </div>
+                        <p class="text-slate-500 mb-6 text-base">Dimensi kaya dengan sistem interlocking.</p>
+                        <a href="https://wa.me/6281234567890" target="_blank" class="w-full btn-outline border-slate-200 text-slate-900 py-3 text-sm">Lihat Spesifikasi</a>
+                    </div>
                 </div>
 
                 <!-- Produk 3 -->
                 <div x-show="selectedCategory === 'all' || selectedCategory === 'tanah_liat'" class="group">
-                    <div class="bg-[#e6e2db] rounded-3xl aspect-[4/3] mb-6 overflow-hidden relative flex items-center justify-center">
-                        <div class="absolute top-4 left-4 bg-white px-4 py-2 text-xs font-bold tracking-wider uppercase text-slate-950 rounded-full">Tanah Liat</div>
-                        <span class="text-slate-400 font-bold uppercase tracking-widest">Gambar Tanah Liat</span>
+                    <div class="bg-slate-200 rounded-3xl aspect-[4/3] mb-6 overflow-hidden relative border border-slate-100 flex items-center justify-center">
+                        <span class="text-slate-400 font-bold text-sm tracking-widest uppercase">Tanah Liat</span>
                     </div>
-                    <h3 class="text-2xl font-bold text-slate-950 mb-2">Morando Klasik</h3>
-                    <p class="text-slate-600 mb-6">Sejuk, natural, dan tradisional.</p>
-                    <ul class="text-base text-slate-600 space-y-3 mb-8 border-t border-slate-200 pt-6">
-                        <li class="flex justify-between"><span>Ukuran</span> <span class="font-bold text-slate-950">32 x 23 cm</span></li>
-                        <li class="flex justify-between"><span>Berat</span> <span class="font-bold text-slate-950">2.2 Kg</span></li>
-                        <li class="flex justify-between"><span>Isi / m²</span> <span class="font-bold text-slate-950">18 pcs</span></li>
-                    </ul>
-                    <a href="https://wa.me/6281234567890" target="_blank" class="w-full btn-outline text-center block">Tanya Harga</a>
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-2xl font-heading font-bold text-slate-900 tracking-tight">Morando Natural</h3>
+                            <span class="text-xs font-bold tracking-widest uppercase text-primary-600 bg-primary-50 px-3 py-1 rounded-full">Tanah Liat</span>
+                        </div>
+                        <p class="text-slate-500 mb-6 text-base">Keanggunan bernapas yang ramah lingkungan.</p>
+                        <a href="https://wa.me/6281234567890" target="_blank" class="w-full btn-outline border-slate-200 text-slate-900 py-3 text-sm">Lihat Spesifikasi</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Banner Ajak Konsultasi (Shopify Callout Style) -->
-    <section class="py-24 sm:py-32 bg-primary-600">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-4xl md:text-6xl font-heading font-extrabold text-white tracking-tight mb-8">
-                Masih ragu memilih genteng yang tepat?
+    <section class="py-32 bg-primary-600">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-6xl font-heading font-bold text-white mb-8 tracking-tighter leading-tight">
+                Konsultasikan visi arsitektur Anda dengan ahli kami.
             </h2>
-            <p class="text-xl text-primary-100 mb-12 max-w-2xl mx-auto">
-                Tim ahli kami siap menghitung estimasi kebutuhan dan memberikan saran terbaik secara gratis untuk proyek Anda.
-            </p>
-            <a href="https://wa.me/6281234567890" target="_blank" class="bg-slate-950 text-white font-bold px-10 py-5 rounded-full hover:bg-slate-800 transition-all duration-300 active:scale-[0.98] inline-flex items-center justify-center gap-2 text-lg">
-                Mulai Konsultasi Gratis
+            <p class="text-xl text-white mb-10 max-w-2xl mx-auto">Kami siap membantu Anda memilih material atap yang paling tepat dan menghitung estimasi kebutuhannya.</p>
+            <a href="https://wa.me/6281234567890" target="_blank" class="btn-primary bg-white text-primary-600 hover:bg-slate-100">
+                Hubungi Konsultan Kami
             </a>
-        </div>
-    </section>
-
-    <!-- Galeri Proyek -->
-    <section class="py-24 sm:py-32 bg-slate-50 border-y border-slate-200" id="galeri" x-data="{ imgModal: false, imgModalSrc: '' }">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="mb-16 md:mb-24">
-                <h2 class="text-4xl md:text-6xl font-heading font-bold text-slate-950 tracking-tight mb-6">Bukti Nyata.</h2>
-                <p class="text-xl text-slate-600 max-w-2xl">Portofolio pemasangan genteng dari ratusan pelanggan yang telah mempercayakan atapnya kepada kami.</p>
-            </div>
-            
-            <div class="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
-                <!-- Gallery Item 1 -->
-                <div class="relative overflow-hidden rounded-3xl group cursor-pointer border border-slate-200" @click="imgModal = true; imgModalSrc = 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2000&auto=format&fit=crop'">
-                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=600&auto=format&fit=crop" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700 ease-in-out" alt="Proyek Perumahan Mewah">
-                    <div class="absolute inset-0 bg-slate-950/20 group-hover:bg-transparent transition-colors duration-500"></div>
-                </div>
-
-                <!-- Gallery Item 2 -->
-                <div class="relative overflow-hidden rounded-3xl group cursor-pointer border border-slate-200" @click="imgModal = true; imgModalSrc = 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2000&auto=format&fit=crop'">
-                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=600&auto=format&fit=crop" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700 ease-in-out" alt="Villa Minimalis">
-                    <div class="absolute inset-0 bg-slate-950/20 group-hover:bg-transparent transition-colors duration-500"></div>
-                </div>
-
-                <!-- Gallery Item 3 -->
-                <div class="relative overflow-hidden rounded-3xl group cursor-pointer border border-slate-200" @click="imgModal = true; imgModalSrc = 'https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2000&auto=format&fit=crop'">
-                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=600&auto=format&fit=crop" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700 ease-in-out" alt="Proyek Komersial">
-                    <div class="absolute inset-0 bg-slate-950/20 group-hover:bg-transparent transition-colors duration-500"></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Image Modal -->
-        <div x-show="imgModal" class="fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/95 p-4 backdrop-blur-md" style="display: none;" x-transition.opacity>
-            <button @click="imgModal = false" class="absolute top-6 right-6 text-slate-400 hover:text-white bg-slate-800 p-3 rounded-full">
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12" /></svg>
-            </button>
-            <img :src="imgModalSrc" class="max-w-full max-h-[90vh] rounded-2xl shadow-2xl" @click.away="imgModal = false">
         </div>
     </section>
 
     <!-- Testimoni & Maps -->
     <section class="py-24 sm:py-32 bg-white" id="testimoni">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
                 
                 <!-- Testimonials -->
                 <div>
-                    <h2 class="text-4xl md:text-5xl font-heading font-bold text-slate-950 tracking-tight mb-12">Cerita Pelanggan.</h2>
+                    <h2 class="text-4xl md:text-5xl font-heading font-bold text-slate-900 mb-12 tracking-tight">Kepercayaan Klien.</h2>
                     
-                    <div class="space-y-8">
+                    <div class="space-y-12">
                         <!-- Review 1 -->
-                        <div class="border-b border-slate-200 pb-8">
-                            <div class="flex items-center gap-1 mb-4 text-slate-950">
-                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <div class="border-b border-slate-100 pb-10">
+                            <div class="flex items-center gap-1 text-slate-900 mb-6">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-5 h-5 fill-current text-slate-300" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                             </div>
-                            <p class="text-xl text-slate-900 font-medium leading-relaxed mb-6">"Kualitas genteng beton flat dari Atmorejo sangat memuaskan. Presisi, tidak bocor, dan membuat tampilan rumah jadi sangat elegan minimalis."</p>
-                            <div>
-                                <h4 class="font-bold text-slate-950">Bpk. Ahmad</h4>
-                                <span class="text-sm text-slate-500">Pemilik Rumah</span>
+                            <p class="text-xl text-slate-700 leading-relaxed mb-6">"Presisi dan keindahan dalam satu produk. Genteng beton dari Atmorejo menyempurnakan garis fasad desain rumah kami."</p>
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center font-heading font-bold text-xl text-primary-600">A</div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900">Bpk. Ahmad</h4>
+                                    <span class="text-sm text-slate-500">Pemilik Rumah</span>
+                                </div>
                             </div>
                         </div>
 
                         <!-- Review 2 -->
-                        <div class="border-b border-slate-200 pb-8">
-                            <div class="flex items-center gap-1 mb-4 text-slate-950">
-                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <div class="border-b border-slate-100 pb-10">
+                            <div class="flex items-center gap-1 text-slate-900 mb-6">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                             </div>
-                            <p class="text-xl text-slate-900 font-medium leading-relaxed mb-6">"Sebagai kontraktor, saya mencari supplier yang bisa memberikan harga pabrik namun dengan kualitas yang konsisten. Atmorejo adalah partner andalan saya."</p>
-                            <div>
-                                <h4 class="font-bold text-slate-950">Bpk. Suryana</h4>
-                                <span class="text-sm text-slate-500">Kontraktor Perumahan</span>
+                            <p class="text-xl text-slate-700 leading-relaxed mb-6">"Sebagai arsitek, saya menghargai material yang konsisten bentuk dan warnanya. Atmorejo memberikan standar tersebut."</p>
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center font-heading font-bold text-xl text-primary-600">S</div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900">Bpk. Suryana</h4>
+                                    <span class="text-sm text-slate-500">Arsitek & Kontraktor</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -242,20 +208,20 @@
 
                 <!-- Location & Maps -->
                 <div class="h-full flex flex-col">
-                    <h2 class="text-4xl md:text-5xl font-heading font-bold text-slate-950 tracking-tight mb-12">Kunjungi Kami.</h2>
+                    <h2 class="text-4xl md:text-5xl font-heading font-bold text-slate-900 mb-12 tracking-tight">Kunjungi Galeri Kami.</h2>
                     
-                    <div class="w-full h-80 rounded-3xl overflow-hidden bg-slate-200 border border-slate-200 mb-8">
+                    <div class="w-full h-[400px] rounded-3xl overflow-hidden bg-slate-100 mb-8 border border-slate-200">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.3973605759197!2d110.38538781115147!3d-7.747608876782029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5900b694adc9%3A0x670925a3892daf75!2sCV%20Atmorejo%20Genteng!5e0!3m2!1sen!2sid!4v1778007162316!5m2!1sen!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
 
                     <div class="grid grid-cols-2 gap-8">
                         <div>
-                            <h4 class="font-bold text-slate-950 mb-2">Alamat</h4>
-                            <p class="text-slate-600">Jl. Raya Genteng No. 123,<br>Kec. Sukamakmur, Kab. Bogor</p>
+                            <h4 class="text-xs font-bold tracking-widest uppercase text-slate-500 mb-2">Alamat</h4>
+                            <p class="text-slate-900 text-base leading-relaxed">Jl. Raya Genteng No. 123,<br>Kec. Sukamakmur, Bogor</p>
                         </div>
                         <div>
-                            <h4 class="font-bold text-slate-950 mb-2">Jam Buka</h4>
-                            <p class="text-slate-600">Senin - Sabtu: 08:00 - 16:00<br>Minggu: Libur</p>
+                            <h4 class="text-xs font-bold tracking-widest uppercase text-slate-500 mb-2">Operasional</h4>
+                            <p class="text-slate-900 text-base leading-relaxed">Senin - Sabtu<br>08:00 - 16:00 WIB</p>
                         </div>
                     </div>
                 </div>

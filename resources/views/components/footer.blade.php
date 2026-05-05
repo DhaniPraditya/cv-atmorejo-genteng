@@ -1,4 +1,4 @@
-<footer class="bg-slate-950 text-slate-300 py-16 lg:py-24 border-t border-slate-900" id="kontak">
+<footer class="bg-slate-50 text-slate-600 py-16 lg:py-24 border-t border-slate-200" id="kontak">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
             
@@ -8,7 +8,7 @@
                     <div class="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center text-white shadow-md">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-home"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
                     </div>
-                    <span class="font-heading font-bold text-2xl tracking-tight text-white">
+                    <span class="font-heading font-bold text-2xl tracking-tight text-slate-800">
                         Atmorejo <span class="text-primary-500">Genteng</span>
                     </span>
                 </div>
@@ -30,7 +30,7 @@
 
             <!-- Quick Links -->
             <div class="lg:pl-8">
-                <h3 class="text-white font-semibold mb-6 tracking-wide uppercase text-sm">Tautan Cepat</h3>
+                <h3 class="text-slate-800 font-semibold mb-6 tracking-wide uppercase text-sm">Tautan Cepat</h3>
                 <ul class="space-y-4">
                     <li><a href="#beranda" class="text-sm hover:text-primary-500 transition-colors">Beranda</a></li>
                     <li><a href="#katalog" class="text-sm hover:text-primary-500 transition-colors">Katalog Produk</a></li>
@@ -41,7 +41,7 @@
 
             <!-- Products -->
             <div>
-                <h3 class="text-white font-semibold mb-6 tracking-wide uppercase text-sm">Produk Kami</h3>
+                <h3 class="text-slate-800 font-semibold mb-6 tracking-wide uppercase text-sm">Produk Kami</h3>
                 <ul class="space-y-4">
                     <li><a href="#" class="text-sm hover:text-primary-500 transition-colors">Genteng Beton Flat</a></li>
                     <li><a href="#" class="text-sm hover:text-primary-500 transition-colors">Genteng Beton Gelombang</a></li>
@@ -52,7 +52,7 @@
 
             <!-- Contact -->
             <div>
-                <h3 class="text-white font-semibold mb-6 tracking-wide uppercase text-sm">Hubungi Kami</h3>
+                <h3 class="text-slate-800 font-semibold mb-6 tracking-wide uppercase text-sm">Hubungi Kami</h3>
                 <ul class="space-y-4">
                     <li class="flex items-start">
                         <svg class="h-5 w-5 text-primary-500 mr-3 mt-0.5 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -77,7 +77,7 @@
             </div>
         </div>
         
-        <div class="mt-12 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div class="mt-12 pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-4">
             <p class="text-sm text-slate-500">
                 &copy; {{ date('Y') }} CV Atmorejo Genteng. Hak Cipta Dilindungi.
             </p>
