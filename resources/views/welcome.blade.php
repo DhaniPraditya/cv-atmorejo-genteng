@@ -143,6 +143,52 @@
         </div>
     </section>
 
+    <!-- Galeri Proyek (Shopify Style) -->
+    <section class="py-24 sm:py-32 bg-white" id="galeri" x-data="{ imgModal: false, imgModalSrc: '' }">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-16 md:mb-24 text-center">
+                <h2 class="text-4xl md:text-5xl font-heading font-bold text-slate-900 mb-4 tracking-tight">Galeri Portofolio.</h2>
+                <p class="text-lg text-slate-500 max-w-2xl mx-auto">Sentuhan akhir pada mahakarya hunian premium.</p>
+            </div>
+            
+            <!-- Bento Grid Gallery -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 auto-rows-[200px] md:auto-rows-[300px]">
+                <!-- Large Feature Image -->
+                <div class="col-span-2 row-span-2 rounded-[2rem] overflow-hidden group cursor-pointer border border-slate-100 relative" @click="imgModalSrc = 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop'; imgModal = true">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Rumah Klasik Mewah">
+                    <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <span class="bg-white/90 backdrop-blur-sm text-slate-900 px-6 py-2 rounded-full font-bold text-sm">Lihat Detail</span>
+                    </div>
+                </div>
+                
+                <!-- Small Image 1 -->
+                <div class="col-span-2 md:col-span-1 row-span-1 rounded-[2rem] overflow-hidden group cursor-pointer border border-slate-100 relative" @click="imgModalSrc = 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop'; imgModal = true">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Desain Modern">
+                </div>
+                
+                <!-- Small Image 2 -->
+                <div class="col-span-2 md:col-span-1 row-span-1 rounded-[2rem] overflow-hidden group cursor-pointer border border-slate-100 relative" @click="imgModalSrc = 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop'; imgModal = true">
+                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Fasad Minimalis">
+                </div>
+                
+                <!-- Medium Landscape Image -->
+                <div class="col-span-2 row-span-1 rounded-[2rem] overflow-hidden group cursor-pointer border border-slate-100 relative" @click="imgModalSrc = 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1974&auto=format&fit=crop'; imgModal = true">
+                    <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1974&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Villa Tropis">
+                </div>
+            </div>
+        </div>
+
+        <!-- Fullscreen Image Modal -->
+        <div x-show="imgModal" class="fixed inset-0 z-[100] flex items-center justify-center bg-slate-900/95 backdrop-blur-sm p-4" style="display: none;">
+            <div @click.away="imgModal = false" class="relative max-w-5xl w-full h-auto max-h-[90vh] rounded-2xl overflow-hidden shadow-2xl">
+                <button @click="imgModal = false" class="absolute top-4 right-4 bg-white/20 hover:bg-white/40 backdrop-blur-md text-white rounded-full p-2 transition-colors z-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </button>
+                <img :src="imgModalSrc" class="w-full h-full object-contain bg-transparent">
+            </div>
+        </div>
+    </section>
+
     <!-- Banner Ajak Konsultasi (Shopify Callout Style) -->
     <section class="py-32 bg-primary-600">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
