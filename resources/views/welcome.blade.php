@@ -155,53 +155,103 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Produk 1 -->
-                <div x-show="selectedCategory === 'all' || selectedCategory === 'beton'" x-transition class="group relative rounded-[2rem] overflow-hidden aspect-[4/5] bg-slate-200">
-                    <img src="https://images.unsplash.com/photo-1616422285623-14ff4e2a14ae?q=80&w=2000&auto=format&fit=crop" alt="Genteng Beton Flat" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 ease-in-out">
+                <div x-show="selectedCategory === 'all' || selectedCategory === 'beton'" x-transition class="group bg-white rounded-[2rem] border border-slate-200 overflow-hidden hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
+                    <div class="relative aspect-square bg-slate-50 p-8 flex items-center justify-center overflow-hidden">
+                        <img src="{{ asset('images/genteng_flat.png') }}" alt="Genteng Beton Flat" class="object-contain w-full h-full group-hover:scale-110 transition-transform duration-700 mix-blend-multiply">
+                        <div class="absolute top-6 left-6">
+                            <span class="bg-slate-200 text-slate-700 text-xs font-bold px-3 py-1.5 rounded-full tracking-widest uppercase">Beton Premium</span>
+                        </div>
+                    </div>
                     
-                    <!-- Slide up overlay -->
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
-                    
-                    <div class="absolute inset-x-0 bottom-0 p-8 translate-y-8 group-hover:translate-y-0 transition-transform duration-500 ease-out">
-                        <span class="text-xs font-bold tracking-widest uppercase text-white mb-3 block opacity-80">Beton Premium</span>
-                        <h3 class="text-3xl font-heading font-normal text-white mb-2">Flat Minimalis</h3>
-                        <p class="text-slate-300 mb-6 text-sm font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">Garis tegas untuk arsitektur kontemporer dan modern. Memberikan kesan sleek tanpa mengorbankan durabilitas.</p>
+                    <div class="p-8">
+                        <h3 class="text-3xl font-heading font-normal text-slate-900 mb-6">Flat Minimalis</h3>
                         
-                        <a href="https://wa.me/6281234567890" target="_blank" class="opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200 inline-flex items-center gap-2 text-white font-bold hover:text-primary-400">
-                            Pesan Sekarang <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        <div class="grid grid-cols-3 gap-4 mb-8 pt-6 border-t border-slate-100">
+                            <div>
+                                <span class="block text-slate-500 text-xs font-medium mb-1">Panjang</span>
+                                <span class="block text-slate-900 font-bold">33 cm</span>
+                            </div>
+                            <div>
+                                <span class="block text-slate-500 text-xs font-medium mb-1">Lebar</span>
+                                <span class="block text-slate-900 font-bold">42 cm</span>
+                            </div>
+                            <div>
+                                <span class="block text-slate-500 text-xs font-medium mb-1">Berat</span>
+                                <span class="block text-slate-900 font-bold">4.4 kg</span>
+                            </div>
+                        </div>
+                        
+                        <a href="https://wa.me/6281234567890" target="_blank" class="flex items-center justify-between w-full border border-slate-200 text-slate-900 font-bold px-6 py-4 rounded-full hover:border-primary-500 hover:text-primary-600 transition-all group/btn">
+                            <span>Pesan Sekarang</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover/btn:translate-x-1 transition-transform"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                         </a>
                     </div>
                 </div>
 
                 <!-- Produk 2 -->
-                <div x-show="selectedCategory === 'all' || selectedCategory === 'beton'" x-transition class="group relative rounded-[2rem] overflow-hidden aspect-[4/5] bg-slate-200">
-                    <img src="https://images.unsplash.com/photo-1594910086208-d2e46cecf475?q=80&w=2000&auto=format&fit=crop" alt="Genteng Beton Garuda" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 ease-in-out">
+                <div x-show="selectedCategory === 'all' || selectedCategory === 'beton'" x-transition class="group bg-white rounded-[2rem] border border-slate-200 overflow-hidden hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
+                    <div class="relative aspect-square bg-slate-50 p-8 flex items-center justify-center overflow-hidden">
+                        <img src="{{ asset('images/genteng_gelombang.png') }}" alt="Genteng Beton Gelombang" class="object-contain w-full h-full group-hover:scale-110 transition-transform duration-700 mix-blend-multiply">
+                        <div class="absolute top-6 left-6">
+                            <span class="bg-slate-200 text-slate-700 text-xs font-bold px-3 py-1.5 rounded-full tracking-widest uppercase">Beton Premium</span>
+                        </div>
+                    </div>
                     
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
-                    
-                    <div class="absolute inset-x-0 bottom-0 p-8 translate-y-8 group-hover:translate-y-0 transition-transform duration-500 ease-out">
-                        <span class="text-xs font-bold tracking-widest uppercase text-white mb-3 block opacity-80">Beton Premium</span>
-                        <h3 class="text-3xl font-heading font-normal text-white mb-2">Gelombang Klasik</h3>
-                        <p class="text-slate-300 mb-6 text-sm font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">Dimensi kaya dengan sistem interlocking ekstra kuat. Sempurna untuk hunian gaya mediterania atau tropis klasik.</p>
+                    <div class="p-8">
+                        <h3 class="text-3xl font-heading font-normal text-slate-900 mb-6">Gelombang Klasik</h3>
                         
-                        <a href="https://wa.me/6281234567890" target="_blank" class="opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200 inline-flex items-center gap-2 text-white font-bold hover:text-primary-400">
-                            Pesan Sekarang <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        <div class="grid grid-cols-3 gap-4 mb-8 pt-6 border-t border-slate-100">
+                            <div>
+                                <span class="block text-slate-500 text-xs font-medium mb-1">Panjang</span>
+                                <span class="block text-slate-900 font-bold">33 cm</span>
+                            </div>
+                            <div>
+                                <span class="block text-slate-500 text-xs font-medium mb-1">Lebar</span>
+                                <span class="block text-slate-900 font-bold">42 cm</span>
+                            </div>
+                            <div>
+                                <span class="block text-slate-500 text-xs font-medium mb-1">Berat</span>
+                                <span class="block text-slate-900 font-bold">4.2 kg</span>
+                            </div>
+                        </div>
+                        
+                        <a href="https://wa.me/6281234567890" target="_blank" class="flex items-center justify-between w-full border border-slate-200 text-slate-900 font-bold px-6 py-4 rounded-full hover:border-primary-500 hover:text-primary-600 transition-all group/btn">
+                            <span>Pesan Sekarang</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover/btn:translate-x-1 transition-transform"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                         </a>
                     </div>
                 </div>
 
                 <!-- Produk 3 -->
-                <div x-show="selectedCategory === 'all' || selectedCategory === 'tanah_liat'" x-transition class="group relative rounded-[2rem] overflow-hidden aspect-[4/5] bg-primary-900">
-                    <!-- Texture Overlay for Clay -->
-                    <div class="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/stucco.png')]"></div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-transparent opacity-90"></div>
+                <div x-show="selectedCategory === 'all' || selectedCategory === 'tanah_liat'" x-transition class="group bg-white rounded-[2rem] border border-slate-200 overflow-hidden hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
+                    <div class="relative aspect-square bg-slate-50 p-8 flex items-center justify-center overflow-hidden">
+                        <img src="{{ asset('images/genteng_tanah_liat.png') }}" alt="Genteng Tanah Liat Morando" class="object-contain w-full h-full group-hover:scale-110 transition-transform duration-700 mix-blend-multiply">
+                        <div class="absolute top-6 left-6">
+                            <span class="bg-primary-50 text-primary-600 text-xs font-bold px-3 py-1.5 rounded-full tracking-widest uppercase">Tanah Liat</span>
+                        </div>
+                    </div>
                     
-                    <div class="absolute inset-x-0 bottom-0 p-8 translate-y-8 group-hover:translate-y-0 transition-transform duration-500 ease-out">
-                        <span class="text-xs font-bold tracking-[0.2em] uppercase text-primary-400 mb-3 block">Tanah Liat</span>
-                        <h3 class="text-3xl font-heading font-normal text-white mb-2">Morando Natural</h3>
-                        <p class="text-slate-300 mb-6 text-sm font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">Keanggunan bernapas yang ramah lingkungan. Dibuat dengan presisi tinggi menghasilkan warna natural yang tak lekang oleh waktu.</p>
+                    <div class="p-8">
+                        <h3 class="text-3xl font-heading font-normal text-slate-900 mb-6">Morando Natural</h3>
                         
-                        <a href="https://wa.me/6281234567890" target="_blank" class="opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200 inline-flex items-center gap-2 text-white font-bold hover:text-primary-400">
-                            Pesan Sekarang <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        <div class="grid grid-cols-3 gap-4 mb-8 pt-6 border-t border-slate-100">
+                            <div>
+                                <span class="block text-slate-500 text-xs font-medium mb-1">Panjang</span>
+                                <span class="block text-slate-900 font-bold">32 cm</span>
+                            </div>
+                            <div>
+                                <span class="block text-slate-500 text-xs font-medium mb-1">Lebar</span>
+                                <span class="block text-slate-900 font-bold">40 cm</span>
+                            </div>
+                            <div>
+                                <span class="block text-slate-500 text-xs font-medium mb-1">Berat</span>
+                                <span class="block text-slate-900 font-bold">2.2 kg</span>
+                            </div>
+                        </div>
+                        
+                        <a href="https://wa.me/6281234567890" target="_blank" class="flex items-center justify-between w-full border border-slate-200 text-slate-900 font-bold px-6 py-4 rounded-full hover:border-primary-500 hover:text-primary-600 transition-all group/btn">
+                            <span>Pesan Sekarang</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover/btn:translate-x-1 transition-transform"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                         </a>
                     </div>
                 </div>
@@ -338,12 +388,13 @@
 
                     <div class="grid grid-cols-2 gap-8 p-8 bg-white rounded-[2rem] border border-slate-200/60 shadow-sm">
                         <div>
-                            <h4 class="text-xs font-bold tracking-widest uppercase text-primary-500 mb-3">Kantor & Galeri</h4>
-                            <p class="text-slate-900 text-base leading-relaxed font-medium">Jl. Raya Genteng No. 123,<br>Kec. Sukamakmur, Bogor</p>
+                            <h4 class="text-xs font-bold tracking-widest uppercase text-primary-500 mb-3">Alamat</h4>
+                            <p class="text-slate-900 text-base leading-relaxed font-medium"> Jl. Kaliurang No.10 KM 6,8 No, Kayen, Condongcatur,<br>Kec. Depok, Kabupaten Sleman, <br>Daerah Istimewa Yogyakarta 55281</p>
                         </div>
                         <div>
                             <h4 class="text-xs font-bold tracking-widest uppercase text-primary-500 mb-3">Waktu Operasional</h4>
-                            <p class="text-slate-900 text-base leading-relaxed font-medium">Senin - Sabtu<br>08:00 - 16:00 WIB</p>
+                            <p class="text-slate-900 text-base leading-relaxed font-medium">Senin - Sabtu<br>08:30 - 16:00 WIB</p>
+                            
                         </div>
                     </div>
                 </div>
