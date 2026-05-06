@@ -11,9 +11,9 @@
         <!-- Hero Content -->
         <div class="relative z-10 px-4 sm:px-6 lg:px-12 max-w-7xl mx-auto w-full pt-28 pb-32">
             <div class="max-w-4xl" x-data="{ show: false }" x-init="setTimeout(() => show = true, 300)">
-                <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-white/20 bg-white/5 backdrop-blur-md mb-8 transition-all duration-1000 transform" :class="show ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'">
-                    <span class="w-2 h-2 rounded-full bg-primary-500 animate-pulse"></span>
-                    <span class="text-white/80 text-xs font-bold uppercase tracking-[0.2em]">Mahakarya Atap Sejak 1990</span>
+                <div class="inline-flex items-center gap-3 px-5 py-2.5 rounded-full border border-primary-500/30 bg-primary-500/20 backdrop-blur-md mb-8 transition-all duration-1000 transform" :class="show ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'">
+                    <span class="w-2.5 h-2.5 rounded-full bg-primary-400 animate-pulse"></span>
+                    <span class="text-white text-xs font-bold uppercase tracking-[0.2em]">Mahakarya Atap Sejak 1990</span>
                 </div>
 
                 <h1 class="text-5xl sm:text-7xl lg:text-[7rem] font-heading font-normal text-white leading-[1.1] mb-8 transition-all duration-1000 delay-100 transform" :class="show ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'">
@@ -31,7 +31,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                     </a>
                     <a href="https://wa.me/6281234567890" target="_blank" class="btn-outline-white w-full sm:w-auto">
-                        Konsultasi Arsitektural
+                        Konsultasi Gratis
                     </a>
                 </div>
             </div>
@@ -77,8 +77,8 @@
     <section class="relative z-10 bg-slate-950 pt-32 pb-24 sm:pt-48 sm:pb-32" id="keunggulan">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="mb-20 md:mb-28 text-center max-w-4xl mx-auto">
-                <span class="text-primary-400 font-bold tracking-[0.2em] uppercase text-sm mb-4 block">Filosofi Konstruksi</span>
-                <h2 class="text-4xl md:text-6xl font-heading font-normal text-white mb-6 leading-tight">Keunggulan Dalam Setiap <span class="italic text-slate-400">Detail.</span></h2>
+                <span class="inline-block bg-primary-500/10 text-primary-400 border border-primary-500/20 font-bold tracking-[0.2em] uppercase text-xs px-4 py-2 rounded-full mb-6">Filosofi Konstruksi</span>
+                <h2 class="text-4xl md:text-6xl font-heading font-normal text-white mb-6 leading-tight">Keunggulan Dalam Setiap <span class="italic text-primary-400">Detail.</span></h2>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
@@ -86,7 +86,7 @@
                 <div class="group relative bg-slate-900 p-10 rounded-[2rem] border border-slate-800 hover:border-primary-500/50 transition-colors duration-500 overflow-hidden">
                     <div class="absolute inset-0 bg-gradient-to-br from-primary-500/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     <div class="relative z-10">
-                        <div class="w-16 h-16 bg-slate-950 border border-slate-800 text-primary-400 rounded-full flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500 shadow-lg">
+                        <div class="w-16 h-16 bg-primary-600 text-white rounded-full flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500 shadow-[0_0_30px_rgba(204,66,32,0.3)]">
                             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                         </div>
                         <h3 class="text-2xl font-heading font-normal text-white mb-4">Ketahanan Abadi</h3>
@@ -110,7 +110,7 @@
                 <div class="group relative bg-slate-900 p-10 rounded-[2rem] border border-slate-800 hover:border-primary-500/50 transition-colors duration-500 overflow-hidden">
                     <div class="absolute inset-0 bg-gradient-to-br from-primary-500/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     <div class="relative z-10">
-                        <div class="w-16 h-16 bg-slate-950 border border-slate-800 text-primary-400 rounded-full flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500 shadow-lg">
+                        <div class="w-16 h-16 bg-primary-600 text-white rounded-full flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500 shadow-[0_0_30px_rgba(204,66,32,0.3)]">
                             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
                         </div>
                         <h3 class="text-2xl font-heading font-normal text-white mb-4">Ramah Lingkungan</h3>
@@ -126,28 +126,28 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-10 border-b border-slate-200 pb-10">
                 <div class="max-w-2xl">
-                    <h2 class="text-4xl md:text-6xl font-heading font-normal text-slate-900 mb-6 leading-tight">Koleksi <span class="italic text-slate-500">Eksklusif.</span></h2>
+                    <h2 class="text-4xl md:text-6xl font-heading font-normal text-slate-900 mb-6 leading-tight">Koleksi <span class="italic text-primary-600">Eksklusif.</span></h2>
                     <p class="text-lg text-slate-600 font-light">Pilih material yang mendefinisikan karakter bangunan Anda.</p>
                 </div>
                 
                 <!-- Animated Filter Tabs -->
                 <div class="flex space-x-2 bg-slate-200/50 p-1.5 rounded-full overflow-x-auto w-full md:w-auto shrink-0 no-scrollbar relative">
                     <button @click="selectedCategory = 'all'" 
-                            :class="selectedCategory === 'all' ? 'text-white' : 'text-slate-600 hover:text-slate-900'" 
+                            :class="selectedCategory === 'all' ? 'text-white' : 'text-slate-600 hover:text-primary-600'" 
                             class="relative px-8 py-3 rounded-full text-sm font-bold transition-colors z-10 whitespace-nowrap">
-                        <span x-show="selectedCategory === 'all'" class="absolute inset-0 bg-slate-900 rounded-full -z-10" x-transition.opacity></span>
+                        <span x-show="selectedCategory === 'all'" class="absolute inset-0 bg-primary-600 rounded-full -z-10 shadow-md shadow-primary-500/20" x-transition.opacity></span>
                         Semua
                     </button>
                     <button @click="selectedCategory = 'beton'" 
-                            :class="selectedCategory === 'beton' ? 'text-white' : 'text-slate-600 hover:text-slate-900'" 
+                            :class="selectedCategory === 'beton' ? 'text-white' : 'text-slate-600 hover:text-primary-600'" 
                             class="relative px-8 py-3 rounded-full text-sm font-bold transition-colors z-10 whitespace-nowrap">
-                        <span x-show="selectedCategory === 'beton'" class="absolute inset-0 bg-slate-900 rounded-full -z-10" x-transition.opacity></span>
+                        <span x-show="selectedCategory === 'beton'" class="absolute inset-0 bg-primary-600 rounded-full -z-10 shadow-md shadow-primary-500/20" x-transition.opacity></span>
                         Beton Premium
                     </button>
                     <button @click="selectedCategory = 'tanah_liat'" 
-                            :class="selectedCategory === 'tanah_liat' ? 'text-white' : 'text-slate-600 hover:text-slate-900'" 
+                            :class="selectedCategory === 'tanah_liat' ? 'text-white' : 'text-slate-600 hover:text-primary-600'" 
                             class="relative px-8 py-3 rounded-full text-sm font-bold transition-colors z-10 whitespace-nowrap">
-                        <span x-show="selectedCategory === 'tanah_liat'" class="absolute inset-0 bg-slate-900 rounded-full -z-10" x-transition.opacity></span>
+                        <span x-show="selectedCategory === 'tanah_liat'" class="absolute inset-0 bg-primary-600 rounded-full -z-10 shadow-md shadow-primary-500/20" x-transition.opacity></span>
                         Tanah Liat
                     </button>
                 </div>
@@ -264,7 +264,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="mb-16 md:mb-24 flex flex-col md:flex-row justify-between items-end gap-8">
                 <div>
-                    <h2 class="text-4xl md:text-6xl font-heading font-normal text-slate-900 mb-4 leading-tight">Portofolio <span class="italic text-slate-500">Karya.</span></h2>
+                    <h2 class="text-4xl md:text-6xl font-heading font-normal text-slate-900 mb-4 leading-tight">Portofolio <span class="italic text-primary-600">Karya.</span></h2>
                     <p class="text-lg text-slate-600 font-light max-w-xl">Menjadi bagian dari mahakarya arsitektur di seluruh penjuru negeri.</p>
                 </div>
                 <div class="hidden md:block">
@@ -310,18 +310,18 @@
         </div>
     </section>
 
-    <!-- Banner Ajak Konsultasi (Sophisticated Dark) -->
-    <section class="py-32 relative overflow-hidden bg-slate-950">
-        <!-- Subtle glow effects -->
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-96 bg-primary-600/30 blur-[120px] rounded-full pointer-events-none"></div>
-        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/noise-pattern-with-subtle-cross-lines.png')] opacity-20 mix-blend-overlay"></div>
+    <!-- Banner Ajak Konsultasi (Terracotta Dominant) -->
+    <section class="py-32 relative overflow-hidden bg-primary-600">
+        <!-- Subtle glow and textures -->
+        <div class="absolute top-0 right-0 w-full h-full bg-gradient-to-bl from-primary-500 via-transparent to-transparent opacity-80 pointer-events-none"></div>
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stucco.png')] opacity-10 mix-blend-overlay"></div>
         
         <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-4xl md:text-6xl lg:text-7xl font-heading font-normal text-white mb-8 leading-tight">
-                Realisasikan Visi <span class="italic text-primary-400">Arsitektur</span> Anda.
+                Realisasikan Visi <span class="italic font-bold text-primary-100">Arsitektur</span> Anda.
             </h2>
-            <p class="text-xl text-slate-400 mb-12 max-w-2xl mx-auto font-light leading-relaxed">Tim ahli kami siap memberikan konsultasi material, perhitungan teknis, dan estimasi biaya secara komprehensif.</p>
-            <a href="https://wa.me/6281234567890" target="_blank" class="btn-primary">
+            <p class="text-xl text-primary-100/90 mb-12 max-w-2xl mx-auto font-light leading-relaxed">Tim ahli kami siap memberikan konsultasi material, perhitungan teknis, dan estimasi biaya secara komprehensif.</p>
+            <a href="https://wa.me/6281234567890" target="_blank" class="bg-white text-primary-600 font-sans font-bold px-10 py-5 rounded-full hover:bg-primary-50 hover:scale-[1.02] transition-all duration-300 active:scale-[0.98] inline-flex items-center justify-center gap-2 shadow-2xl">
                 Konsultasi Sekarang
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             </a>
@@ -335,7 +335,7 @@
                 
                 <!-- Testimonials -->
                 <div>
-                    <h2 class="text-4xl md:text-5xl font-heading font-normal text-slate-900 mb-12">Reputasi <span class="italic text-slate-500">Teruji.</span></h2>
+                    <h2 class="text-4xl md:text-5xl font-heading font-normal text-slate-900 mb-12">Reputasi <span class="italic text-primary-500">Teruji.</span></h2>
                     
                     <div class="space-y-8">
                         <!-- Review 1 -->
@@ -380,7 +380,7 @@
 
                 <!-- Location & Maps -->
                 <div class="h-full flex flex-col">
-                    <h2 class="text-4xl md:text-5xl font-heading font-normal text-slate-900 mb-12">Pusat <span class="italic text-slate-500">Distribusi.</span></h2>
+                    <h2 class="text-4xl md:text-5xl font-heading font-normal text-slate-900 mb-12">Pusat <span class="italic text-primary-500">Distribusi.</span></h2>
                     
                     <div class="w-full h-[450px] rounded-[2rem] overflow-hidden bg-slate-200 mb-8 border border-slate-200/60 shadow-inner">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.3973605759197!2d110.38538781115147!3d-7.747608876782029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5900b694adc9%3A0x670925a3892daf75!2sCV%20Atmorejo%20Genteng!5e0!3m2!1sen!2sid!4v1778007162316!5m2!1sen!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="grayscale hover:grayscale-0 transition-all duration-700"></iframe>
