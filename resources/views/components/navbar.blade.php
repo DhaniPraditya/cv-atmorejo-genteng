@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 <header x-data="{ mobileMenuOpen: false }" class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all duration-300">
-=======
-<header x-data="{ mobileMenuOpen: false }" class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b-[3px] border-primary-500 shadow-sm transition-all duration-300">
->>>>>>> 0c80183053b7a1109115c40951ccb87b8cf95134
     <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Global">
         <div class="flex items-center justify-between h-20">
             
@@ -60,11 +56,7 @@
              x-transition:leave="transition ease-in-out duration-300 transform"
              x-transition:leave-start="translate-x-0"
              x-transition:leave-end="translate-x-full"
-<<<<<<< HEAD
              class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-slate-900/10 shadow-2xl border-l border-slate-200">
-=======
-             class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-slate-900/10 shadow-2xl border-t-[3px] border-primary-500">
->>>>>>> 0c80183053b7a1109115c40951ccb87b8cf95134
             
             <div class="flex items-center justify-between">
                 <a href="/" class="-m-1.5 p-1.5 flex items-center gap-2">
