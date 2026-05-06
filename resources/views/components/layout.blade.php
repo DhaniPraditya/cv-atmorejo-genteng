@@ -9,7 +9,11 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<<<<<<< HEAD
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+=======
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+>>>>>>> 0c80183053b7a1109115c40951ccb87b8cf95134
 
     <!-- Styles / Scripts -->
     @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
@@ -19,7 +23,11 @@
 <body class="font-sans antialiased bg-slate-50 text-slate-800 flex flex-col min-h-screen">
     <x-navbar />
 
+<<<<<<< HEAD
     <main class="flex-grow">
+=======
+    <main class="flex-grow pt-20">
+>>>>>>> 0c80183053b7a1109115c40951ccb87b8cf95134
         {{ $slot }}
     </main>
 
