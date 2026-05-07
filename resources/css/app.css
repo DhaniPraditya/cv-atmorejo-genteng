@@ -1,21 +1,25 @@
 @import 'tailwindcss';
 
+
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
 @source '../**/*.blade.php';
 @source '../**/*.js';
+@source "../../node_modules/flowbite";
+
 
 @theme {
     --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
     --font-heading: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
-    
+
     /* Terracotta / Merah Bata color palette for the Genteng theme */
     --color-primary-50: #fdf5f3;
     --color-primary-100: #fce8e2;
     --color-primary-200: #f8d0c5;
     --color-primary-300: #f3b09c;
     --color-primary-400: #ec8568;
-    --color-primary-500: #e25a36; /* Base Terracotta */
+    --color-primary-500: #e25a36;
+    /* Base Terracotta */
     --color-primary-600: #cc4220;
     --color-primary-700: #aa361d;
     --color-primary-800: #8d2f1b;
@@ -27,12 +31,15 @@
     .glass {
         @apply bg-white/90 backdrop-blur-xl border-b border-slate-200;
     }
+
     .btn-primary {
         @apply bg-primary-600 text-white font-bold px-8 py-4 rounded-full hover:bg-primary-700 hover:scale-[1.02] transition-transform duration-300 active:scale-[0.98] inline-flex items-center justify-center gap-2;
     }
+
     .btn-outline {
         @apply border border-white text-white font-bold px-8 py-4 rounded-full hover:bg-white/10 hover:scale-[1.02] transition-transform duration-300 active:scale-[0.98] inline-flex items-center justify-center gap-2;
     }
+
     .btn-accent {
         @apply bg-primary-600 text-white font-bold px-8 py-4 rounded-full hover:bg-primary-700 hover:scale-[1.02] transition-transform duration-300 active:scale-[0.98] inline-flex items-center justify-center gap-2;
     }

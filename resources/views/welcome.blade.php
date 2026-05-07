@@ -49,13 +49,12 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Card 1 -->
                 <div class="bg-slate-50 p-10 rounded-[2rem] border border-slate-100 hover:bg-white hover:shadow-lg transition-all duration-300 group">
-                    <div class="w-14 h-14 bg-slate-900 text-white rounded-full flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+                    <div class="w-14 h-14 bg-primary-600 text-white rounded-full flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                     </div>
                     <h3 class="text-2xl font-heading font-bold text-slate-900 mb-4 tracking-tight">Ketahanan Abadi</h3>
                     <p class="text-slate-500 text-base leading-relaxed">Diproses dengan pemanasan tingkat tinggi menghasilkan kepadatan material yang tahan terhadap lumut dan cuaca ekstrem.</p>
                 </div>
-                
                 <!-- Card 2 -->
                 <div class="bg-slate-50 p-10 rounded-[2rem] border border-slate-100 hover:bg-white hover:shadow-lg transition-all duration-300 group">
                     <div class="w-14 h-14 bg-primary-600 text-white rounded-full flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
