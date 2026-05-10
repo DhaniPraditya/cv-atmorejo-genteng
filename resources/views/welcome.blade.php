@@ -50,7 +50,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
                         </div>
                         <div>
-                            <p class="text-white font-heading font-bold text-2xl">Harga Pabrik</p>
+                            <p class="text-white font-heading font-normal text-2xl">Harga Pabrik</p>
                             <p class="text-slate-400 text-sm mt-1">Langsung dari fasilitas kami</p>
                         </div>
                     </div>
@@ -59,7 +59,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
                         </div>
                         <div>
-                            <p class="text-white font-heading font-bold text-2xl">Garansi 20 Thn</p>
+                            <p class="text-white font-heading font-normal text-2xl">Garansi 20 Thn</p>
                             <p class="text-slate-400 text-sm mt-1">Perlindungan cuaca ekstrem</p>
                         </div>
                     </div>
@@ -68,7 +68,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
                         </div>
                         <div>
-                            <p class="text-white font-heading font-bold text-2xl">Premium Quality</p>
+                            <p class="text-white font-heading font-normal text-2xl">Premium Quality</p>
                             <p class="text-slate-400 text-sm mt-1">Standar estetika tertinggi</p>
                         </div>
                     </div>
