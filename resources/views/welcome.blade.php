@@ -20,7 +20,7 @@
                     <span class="text-white text-xs font-bold uppercase tracking-[0.2em]">Mahakarya Atap Sejak 1990</span>
                 </div>
 
-                <h1 class="text-5xl sm:text-7xl lg:text-[7rem] font-heading font-normal text-white leading-[1.1] mb-8 transition-all duration-1000 delay-100 transform" :class="show ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'">
+                <h1 class="text-5xl sm:text-7xl lg:text-[7rem] font-heading font-semibold text-white leading-[1.1] mb-8 transition-all duration-1000 delay-100 transform" :class="show ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'">
                     Estetika <span class="italic text-primary-400">Arsitektur,</span><br>
                     Kekuatan Abadi.
                 </h1>

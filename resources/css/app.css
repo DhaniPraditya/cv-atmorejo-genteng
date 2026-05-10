@@ -7,7 +7,7 @@
 
 @theme {
     --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
-    --font-heading: 'Playfair Display', ui-serif, Georgia, serif;
+    --font-heading: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
     
     /* Terracotta / Merah Bata color palette for the Genteng theme */
     --color-primary-50: #fdf5f3;
