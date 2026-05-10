@@ -26,7 +26,7 @@
     <x-footer />
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/6281234567890?text=Halo%20CV%20Atmorejo%20Genteng,%20saya%20ingin%20berkonsultasi%20mengenai%20produk%20Anda." 
+    <a href="https://wa.me/628122709648?text=Halo%20CV%20Atmorejo%20Genteng,%20saya%20ingin%20berkonsultasi%20mengenai%20produk%20Anda." 
        target="_blank"
        rel="noopener noreferrer"
        class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
